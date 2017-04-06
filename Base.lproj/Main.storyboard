@@ -31,7 +31,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="rollTheDice" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LvH-ab-ifY"/>
+                                    <action selector="rollTheDice" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eZC-X7-J5b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,6 +41,9 @@
                             <constraint firstAttribute="centerY" secondItem="0CI-ro-g3x" secondAttribute="centerY" id="icH-2t-PDN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="qUR-90-axl" kind="modal" identifier="rollDice" id="gxT-fT-Chp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,13 +107,13 @@
                     </view>
                     <connections>
                         <outlet property="firstDie" destination="r8F-NY-C0r" id="3Xg-2o-Wy0"/>
-                        <outlet property="secondDie" destination="auL-3f-b4I" id="8Y9-hp-Nih"/>
+                        <outlet property="secondDie" destination="auL-3f-b4I" id="AFT-ay-ASC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckr-Co-O4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="o8S-Co-8tn"/>
             </objects>
-            <point key="canvasLocation" x="645" y="879"/>
+            <point key="canvasLocation" x="768" y="879"/>
         </scene>
     </scenes>
     <resources>
